@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5afa86b4-53d4-414d-9398-4a47ecbd3182",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Wizard_roll0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "c66fe987-aba0-4e74-ab2c-2a81a6c9e3a6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5afa86b4-53d4-414d-9398-4a47ecbd3182",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3.5,
+      "offsetY": 7,
+      "trimX": 34,
+      "trimY": 6,
+      "width": 1461,
+      "height": 102,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

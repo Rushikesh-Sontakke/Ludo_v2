@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a6b0ae14-f4ff-465d-95f3-7e8a2e22d292",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_fall0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "636d45b8-7c1b-4918-be63-8c166fa805ad",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a6b0ae14-f4ff-465d-95f3-7e8a2e22d292",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -8,
+      "offsetY": 12.5,
+      "trimX": 23,
+      "trimY": 0,
+      "width": 1474,
+      "height": 103,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

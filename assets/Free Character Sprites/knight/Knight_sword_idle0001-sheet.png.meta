@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "fc44a96f-aaa1-4c33-9c63-268ba08b0579",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Knight_sword_idle0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "df8a3730-ff1e-46c2-bcd5-23c88be25d2e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "fc44a96f-aaa1-4c33-9c63-268ba08b0579",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 7.5,
+      "offsetY": 2.5,
+      "trimX": 42,
+      "trimY": 15,
+      "width": 1467,
+      "height": 93,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

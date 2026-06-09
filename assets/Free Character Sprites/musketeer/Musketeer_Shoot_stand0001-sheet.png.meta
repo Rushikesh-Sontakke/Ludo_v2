@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5ac55122-8cb1-46c6-84b6-fab253114109",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 768,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_Shoot_stand0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "cc28a46c-96ff-4ad0-b1bc-4d3886b13cfb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5ac55122-8cb1-46c6-84b6-fab253114109",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 7,
+      "trimX": 27,
+      "trimY": 6,
+      "width": 714,
+      "height": 102,
+      "rawWidth": 768,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

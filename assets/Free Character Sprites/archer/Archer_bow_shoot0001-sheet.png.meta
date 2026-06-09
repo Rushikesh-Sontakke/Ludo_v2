@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "98e1a974-32fd-4594-ba16-1966792e1d83",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1280,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_bow_shoot0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "3d98fe1e-d0db-4864-a2f2-bd0d487f38ab",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "98e1a974-32fd-4594-ba16-1966792e1d83",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5,
+      "offsetY": 4.5,
+      "trimX": 26,
+      "trimY": 11,
+      "width": 1218,
+      "height": 97,
+      "rawWidth": 1280,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

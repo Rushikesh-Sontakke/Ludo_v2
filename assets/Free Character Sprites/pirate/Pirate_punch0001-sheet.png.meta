@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ffc88cf4-7291-4146-a05b-dae7f7d55be7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_punch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "a84d7297-2741-4bec-bbb0-4f1e45369410",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ffc88cf4-7291-4146-a05b-dae7f7d55be7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3,
+      "offsetY": 4.5,
+      "trimX": 38,
+      "trimY": 11,
+      "width": 942,
+      "height": 97,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

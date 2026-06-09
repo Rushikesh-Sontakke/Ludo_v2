@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ea644e91-ce9f-4916-87ae-59a8f6687c41",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Wizard_swim_surface0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "11cbbf38-1329-45ef-9eea-f80647e55874",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ea644e91-ce9f-4916-87ae-59a8f6687c41",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 6,
+      "offsetY": 6.5,
+      "trimX": 38,
+      "trimY": 7,
+      "width": 1472,
+      "height": 101,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

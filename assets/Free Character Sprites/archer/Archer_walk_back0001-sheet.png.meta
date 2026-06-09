@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0a533a23-cac2-4525-9e9a-b5f00050c538",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_walk_back0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "7a3b1401-66c4-454f-b15f-802cf2cfeb94",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0a533a23-cac2-4525-9e9a-b5f00050c538",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6,
+      "offsetY": 5,
+      "trimX": 38,
+      "trimY": 10,
+      "width": 1448,
+      "height": 98,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

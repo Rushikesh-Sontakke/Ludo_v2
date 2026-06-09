@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cbf77659-ff89-4eaa-9b73-d7c5647ab963",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "knight_slide0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "99b88942-0345-4f4c-9cc9-1aac5cc4748c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cbf77659-ff89-4eaa-9b73-d7c5647ab963",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -12.5,
+      "offsetY": 1,
+      "trimX": 23,
+      "trimY": 18,
+      "width": 1465,
+      "height": 90,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

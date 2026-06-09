@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ccb70fd7-c4de-427e-a209-34e958cfdf6a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1664,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_casting0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "5879aa55-b007-4756-9f8f-b24d9a727781",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ccb70fd7-c4de-427e-a209-34e958cfdf6a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -11.5,
+      "offsetY": 5,
+      "trimX": 33,
+      "trimY": 10,
+      "width": 1575,
+      "height": 98,
+      "rawWidth": 1664,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

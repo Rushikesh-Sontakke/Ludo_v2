@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "239f65ff-dbb0-45b0-b911-e51278ec96a4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Knight_swim_surface0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "48c8497c-75bb-4e06-a452-302ee89f8c72",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "239f65ff-dbb0-45b0-b911-e51278ec96a4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 6,
+      "trimX": 41,
+      "trimY": 13,
+      "width": 1456,
+      "height": 90,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bc75a5f4-658d-42ae-8f41-437d3e06859e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1280,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_throw0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "b0c3a9a4-178c-4f14-80f5-9643a4b98324",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bc75a5f4-658d-42ae-8f41-437d3e06859e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -17.5,
+      "offsetY": 7,
+      "trimX": 18,
+      "trimY": 6,
+      "width": 1209,
+      "height": 102,
+      "rawWidth": 1280,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

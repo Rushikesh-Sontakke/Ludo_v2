@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9a044e9a-3bcd-48c9-b69f-d0c45a7914a5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_climb_side0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "7654b959-4527-4fff-8daf-941f3f2c0faf",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9a044e9a-3bcd-48c9-b69f-d0c45a7914a5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -22,
+      "offsetY": 6,
+      "trimX": 16,
+      "trimY": 9,
+      "width": 1460,
+      "height": 98,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

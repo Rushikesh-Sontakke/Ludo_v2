@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "101a198e-cee7-42b7-9226-afff439c547b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Wizard_crouch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "d8f99f7d-daa5-495a-a10d-a2c63255eab0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "101a198e-cee7-42b7-9226-afff439c547b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -8.5,
+      "offsetY": -2,
+      "trimX": 24,
+      "trimY": 24,
+      "width": 1471,
+      "height": 84,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a6d07b7f-ca40-4bd2-be24-b0b6a408f49d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_dead_back0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "e44eedbb-4194-4cc9-bbb6-dd1f02baab6a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a6d07b7f-ca40-4bd2-be24-b0b6a408f49d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2.5,
+      "offsetY": 2.5,
+      "trimX": 36,
+      "trimY": 15,
+      "width": 947,
+      "height": 93,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

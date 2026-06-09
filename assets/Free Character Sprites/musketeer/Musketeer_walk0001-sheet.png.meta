@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "26d567f0-f51f-4b1b-bd38-3b315f6ac056",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_walk0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "4f08e012-47e4-4325-af4c-08deb23964ba",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "26d567f0-f51f-4b1b-bd38-3b315f6ac056",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -14.5,
+      "offsetY": 6,
+      "trimX": 23,
+      "trimY": 8,
+      "width": 1461,
+      "height": 100,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

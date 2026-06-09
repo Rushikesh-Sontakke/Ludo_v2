@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "74307a47-38d4-43a3-a6e8-c9c4a0021fcc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_crouch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "0416221e-78f3-41a0-86b6-d2f5ad773c37",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "74307a47-38d4-43a3-a6e8-c9c4a0021fcc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -11,
+      "offsetY": -2.5,
+      "trimX": 30,
+      "trimY": 25,
+      "width": 1454,
+      "height": 83,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

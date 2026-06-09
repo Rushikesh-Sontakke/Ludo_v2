@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "828c8a91-3e38-4418-a11e-c80ea4a184c1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1152,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_dash0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "b00e294a-2a53-48b6-bc9c-e796e0bf1c56",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "828c8a91-3e38-4418-a11e-c80ea4a184c1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -11.5,
+      "offsetY": 3.5,
+      "trimX": 27,
+      "trimY": 13,
+      "width": 1075,
+      "height": 95,
+      "rawWidth": 1152,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

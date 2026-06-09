@@ -1,0 +1,73 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Archer_walk",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.15,
+  "sample": 60,
+  "speed": 0.2,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "8a267d6b-0697-4d9e-ad6f-a52d6cc43570"
+            }
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": {
+              "__uuid__": "74c7bcd8-f9dd-49bc-8247-e5f16c1d42a3"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "13333776-320e-4430-a74a-af43c7c61490"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "4bdf6436-7a20-4a33-9a98-2ddc6fdf9cce"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "74c632d9-3e71-4e23-b4d6-3ebdb6960cb1"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "c882bbec-fcee-412d-b4d7-c5b0e1760385"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "9334b26e-c41c-42c7-90ff-1156e77beead"
+            }
+          },
+          {
+            "frame": 0.11666666666666667,
+            "value": {
+              "__uuid__": "07489813-9b9d-416a-8fb5-52ebd8a80ba3"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "eeaf328b-f6f9-4460-aead-58e59a668a9d"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

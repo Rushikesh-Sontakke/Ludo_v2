@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d1801c84-90b3-4bea-aab8-437a3446ae9f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_swim_surface0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "391cec81-755a-4cbf-ab24-388aa788d872",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d1801c84-90b3-4bea-aab8-437a3446ae9f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 3,
+      "offsetY": 9,
+      "trimX": 43,
+      "trimY": 8,
+      "width": 1456,
+      "height": 94,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

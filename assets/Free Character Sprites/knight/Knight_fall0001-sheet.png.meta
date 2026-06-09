@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "503c99e3-4edc-4cbf-9237-ca823584e6ad",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Knight_fall0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "09e9dbb3-ed69-4c79-95ba-9b6b37758bb0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "503c99e3-4edc-4cbf-9237-ca823584e6ad",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6.5,
+      "offsetY": 11,
+      "trimX": 26,
+      "trimY": 6,
+      "width": 1471,
+      "height": 94,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ce02bead-35b8-4fa2-b9b1-80118413e892",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_pull0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "0848019a-da64-4d1d-888d-0265c7cc7f57",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ce02bead-35b8-4fa2-b9b1-80118413e892",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 39,
+      "trimY": 19,
+      "width": 1458,
+      "height": 89,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

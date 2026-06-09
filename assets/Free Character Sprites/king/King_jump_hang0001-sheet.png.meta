@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b5076911-1c4c-493a-9bfd-e956d9844bb5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_jump_hang0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "76694057-a2cd-4579-9f2f-c993dadb889f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b5076911-1c4c-493a-9bfd-e956d9844bb5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -16.5,
+      "offsetY": 10.5,
+      "trimX": 27,
+      "trimY": 2,
+      "width": 1449,
+      "height": 103,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

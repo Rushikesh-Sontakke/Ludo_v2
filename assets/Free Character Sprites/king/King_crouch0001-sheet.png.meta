@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "90bfaf3f-9388-447e-a8e0-567294d86ddd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_crouch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "4c6e061a-7aaf-4fd9-a203-8b4f6928203c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "90bfaf3f-9388-447e-a8e0-567294d86ddd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -11,
+      "offsetY": -4,
+      "trimX": 30,
+      "trimY": 28,
+      "width": 1454,
+      "height": 80,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

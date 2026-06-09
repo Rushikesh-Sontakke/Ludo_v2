@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5112359d-227e-4cfd-af52-0d88c3b39268",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_swim_surface0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "e6489a3d-0754-4266-bde1-5cf3b1deaad1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5112359d-227e-4cfd-af52-0d88c3b39268",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 7,
+      "trimX": 40,
+      "trimY": 11,
+      "width": 1456,
+      "height": 92,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

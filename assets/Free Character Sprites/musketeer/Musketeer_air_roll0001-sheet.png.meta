@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "38e6cc10-4928-47d8-ae62-8c95efe9435d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_air_roll0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "4d69c12f-bf17-4739-a258-7555ab22f128",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "38e6cc10-4928-47d8-ae62-8c95efe9435d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -18,
+      "offsetY": 2,
+      "trimX": 20,
+      "trimY": 2,
+      "width": 1460,
+      "height": 120,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

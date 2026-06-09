@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "780dfa91-2f13-4835-bc63-453db41f8607",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "knight_pistol_aim_up0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "f9661624-006e-496a-9321-e32519d41fc4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "780dfa91-2f13-4835-bc63-453db41f8607",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 2,
+      "trimX": 36,
+      "trimY": 16,
+      "width": 439,
+      "height": 92,
+      "rawWidth": 512,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2ae17397-bb62-475b-b440-495006eb123b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_climb0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "5a7fc4ef-54e2-49b0-9221-67a8a4cd1514",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2ae17397-bb62-475b-b440-495006eb123b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -12.5,
+      "offsetY": 8.5,
+      "trimX": 32,
+      "trimY": 6,
+      "width": 1447,
+      "height": 99,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

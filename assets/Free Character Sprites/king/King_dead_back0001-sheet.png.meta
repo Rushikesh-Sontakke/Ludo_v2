@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6250c7de-c2b6-46a4-9cd7-9236921baff2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_dead_back0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "a9615d58-0ae5-4f7e-99dc-56e65dfd1174",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6250c7de-c2b6-46a4-9cd7-9236921baff2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": 1.5,
+      "trimX": 26,
+      "trimY": 17,
+      "width": 957,
+      "height": 91,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

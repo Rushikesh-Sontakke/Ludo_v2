@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8aa30ddb-0b2c-4c76-ae82-66e1e201e7d2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 768,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_Shoot_crouch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "cef94559-c1bb-45e0-a860-9ab2b8657f44",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8aa30ddb-0b2c-4c76-ae82-66e1e201e7d2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -1.5,
+      "trimX": 27,
+      "trimY": 23,
+      "width": 713,
+      "height": 85,
+      "rawWidth": 768,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

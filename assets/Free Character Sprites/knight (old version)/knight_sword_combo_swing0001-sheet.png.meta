@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a9390233-b85e-4848-9227-8410fb2fb457",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 4480,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "knight_sword_combo_swing0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "8247a4c8-b25e-459a-90f9-9aa87c541fdc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a9390233-b85e-4848-9227-8410fb2fb457",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -9,
+      "offsetY": 1,
+      "trimX": 24,
+      "trimY": 18,
+      "width": 4414,
+      "height": 90,
+      "rawWidth": 4480,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

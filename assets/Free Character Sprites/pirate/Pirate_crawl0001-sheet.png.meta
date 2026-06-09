@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6498eca4-8a23-43f8-8242-64928874e2e1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_crawl0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "c42595c5-7839-4c47-a14d-132dd0eb6bd5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6498eca4-8a23-43f8-8242-64928874e2e1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -8.5,
+      "offsetY": -11,
+      "trimX": 26,
+      "trimY": 42,
+      "width": 1467,
+      "height": 66,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

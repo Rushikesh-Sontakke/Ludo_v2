@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3a4ee8da-8f6d-46b3-966f-6d4c7a756ff1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_climb_side0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "78638577-a6a9-41c0-b4aa-9875fc8104b4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3a4ee8da-8f6d-46b3-966f-6d4c7a756ff1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -21,
+      "offsetY": 11,
+      "trimX": 17,
+      "trimY": 2,
+      "width": 1460,
+      "height": 102,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

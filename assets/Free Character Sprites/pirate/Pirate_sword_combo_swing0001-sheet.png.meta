@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "69ff395c-8417-40fc-852d-bf4639a9a0c3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 4480,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_sword_combo_swing0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "33d2f417-5120-47ee-91ca-5cd677ca5efe",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "69ff395c-8417-40fc-852d-bf4639a9a0c3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6,
+      "offsetY": 4.5,
+      "trimX": 19,
+      "trimY": 11,
+      "width": 4430,
+      "height": 97,
+      "rawWidth": 4480,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

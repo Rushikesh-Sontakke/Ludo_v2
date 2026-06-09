@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c5dddab0-e182-4f8a-a5b5-113c1bb50f2d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_carry_back0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "5f1f61b6-f624-4001-8c9e-245ee7b96051",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c5dddab0-e182-4f8a-a5b5-113c1bb50f2d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7,
+      "offsetY": 0,
+      "trimX": 24,
+      "trimY": 21,
+      "width": 1474,
+      "height": 86,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

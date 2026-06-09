@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "992f4ded-431c-4465-9d63-6f1d86c5255b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_air_roll0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "13ba7170-17b7-4f92-8e80-cba485f3fa6d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "992f4ded-431c-4465-9d63-6f1d86c5255b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -16.5,
+      "offsetY": 8.5,
+      "trimX": 23,
+      "trimY": 3,
+      "width": 1457,
+      "height": 105,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

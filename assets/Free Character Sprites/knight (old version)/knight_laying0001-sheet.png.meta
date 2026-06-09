@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d77101e0-5f3e-43f6-8efc-eeb7b80ce889",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "knight_laying0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "b9cbe9c8-fae2-4141-9d28-ff585ab9036c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d77101e0-5f3e-43f6-8efc-eeb7b80ce889",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -9,
+      "offsetY": -22.5,
+      "trimX": 16,
+      "trimY": 65,
+      "width": 1486,
+      "height": 43,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

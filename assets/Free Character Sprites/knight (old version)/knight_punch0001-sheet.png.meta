@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f82da17b-401c-4830-a574-4c6aaeafa816",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "knight_punch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "9f07d4b0-ebac-444f-9544-3b444dfe4600",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f82da17b-401c-4830-a574-4c6aaeafa816",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6,
+      "offsetY": 1.5,
+      "trimX": 37,
+      "trimY": 17,
+      "width": 938,
+      "height": 91,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

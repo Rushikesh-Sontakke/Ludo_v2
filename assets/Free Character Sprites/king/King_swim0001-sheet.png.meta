@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c71ca299-2f14-4a86-9908-95d91439e8f0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_swim0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "d6bf12e3-a675-44b8-b990-b1e9f2239982",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c71ca299-2f14-4a86-9908-95d91439e8f0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -10,
+      "trimX": 36,
+      "trimY": 42,
+      "width": 1464,
+      "height": 64,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

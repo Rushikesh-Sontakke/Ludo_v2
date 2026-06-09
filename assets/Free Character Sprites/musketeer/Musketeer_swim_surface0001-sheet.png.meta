@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5cf81dd7-396a-4f42-a73d-5e8027ada02b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_swim_surface0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "a9e8906a-df58-46e8-8276-745735f60308",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5cf81dd7-396a-4f42-a73d-5e8027ada02b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 5.5,
+      "trimX": 37,
+      "trimY": 9,
+      "width": 1462,
+      "height": 99,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0acc9bb3-3c72-4020-a2b5-34d58699393d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Wizard_climb_edge0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "20596762-e0e0-45d4-ac8b-a927dd599f7d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0acc9bb3-3c72-4020-a2b5-34d58699393d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -20,
+      "offsetY": 5.5,
+      "trimX": 1,
+      "trimY": 5,
+      "width": 1494,
+      "height": 107,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

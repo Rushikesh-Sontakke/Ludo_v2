@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "45f35ab5-2815-4e91-bb2c-ea1885764f2a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_fall0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "d071ce8c-5629-45ee-8293-449bcd240620",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "45f35ab5-2815-4e91-bb2c-ea1885764f2a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7,
+      "offsetY": 12.5,
+      "trimX": 25,
+      "trimY": 4,
+      "width": 1472,
+      "height": 95,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

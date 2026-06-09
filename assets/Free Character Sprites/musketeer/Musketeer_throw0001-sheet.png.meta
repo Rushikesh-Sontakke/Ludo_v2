@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "330445ed-d8a0-4f7a-800e-27db00f08d26",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1280,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_throw0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "762a4cf4-bd77-4548-90fc-1063d4b7e52e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "330445ed-d8a0-4f7a-800e-27db00f08d26",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -20.5,
+      "offsetY": 5.5,
+      "trimX": 13,
+      "trimY": 9,
+      "width": 1213,
+      "height": 99,
+      "rawWidth": 1280,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

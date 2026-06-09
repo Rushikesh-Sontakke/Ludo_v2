@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a12f3076-9537-4eb1-9afd-0035354180c0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_jump_hang0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "dff614e4-41a9-4382-812f-f61b7a1b87f6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a12f3076-9537-4eb1-9afd-0035354180c0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -17.5,
+      "offsetY": 8.5,
+      "trimX": 24,
+      "trimY": 5,
+      "width": 1453,
+      "height": 101,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

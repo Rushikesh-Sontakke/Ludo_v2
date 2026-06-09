@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2e0849c2-1bc8-45ae-8f96-545c96d98f77",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_air_roll0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "278ef446-f11b-468e-b86b-ade8222f065e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2e0849c2-1bc8-45ae-8f96-545c96d98f77",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -18,
+      "offsetY": 7.5,
+      "trimX": 23,
+      "trimY": 5,
+      "width": 1454,
+      "height": 103,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b6d17e52-7111-41bb-9a42-5c0811c983ec",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_punch0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "8b510966-09bc-4c14-92f1-e887324cc015",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b6d17e52-7111-41bb-9a42-5c0811c983ec",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -9,
+      "offsetY": 3.5,
+      "trimX": 32,
+      "trimY": 13,
+      "width": 942,
+      "height": 95,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

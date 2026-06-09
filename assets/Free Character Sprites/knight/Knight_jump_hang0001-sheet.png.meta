@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7a4731b9-d3fb-45d2-9ac3-3e425d3430c0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Knight_jump_hang0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "34d14497-a902-4e43-b44a-7c3dc35d7225",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7a4731b9-d3fb-45d2-9ac3-3e425d3430c0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -17.5,
+      "offsetY": 8,
+      "trimX": 24,
+      "trimY": 7,
+      "width": 1453,
+      "height": 98,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

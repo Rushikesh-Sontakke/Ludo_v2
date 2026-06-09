@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "77d8f6f6-1317-42d4-80d1-2217fac307e3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_leap0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "8ce6afcf-7117-4f6f-9880-c7b62fd1f9d3",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "77d8f6f6-1317-42d4-80d1-2217fac307e3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -8.5,
+      "offsetY": 8,
+      "trimX": 30,
+      "trimY": 4,
+      "width": 1459,
+      "height": 104,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

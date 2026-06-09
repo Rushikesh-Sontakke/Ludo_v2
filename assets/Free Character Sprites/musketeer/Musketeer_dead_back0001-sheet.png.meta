@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "02bbceb9-57d7-461a-8b39-baecb5008734",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_dead_back0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "822fdb01-2ec7-4bda-b95a-92fd10ff981a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "02bbceb9-57d7-461a-8b39-baecb5008734",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6,
+      "offsetY": 3.5,
+      "trimX": 25,
+      "trimY": 13,
+      "width": 962,
+      "height": 95,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

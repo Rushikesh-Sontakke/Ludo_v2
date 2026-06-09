@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5b04be03-6e9d-439f-9d9a-88c140997863",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Archer_fall0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "3a1c501e-a3e5-42c0-9cdb-858ce8223895",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5b04be03-6e9d-439f-9d9a-88c140997863",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7,
+      "offsetY": 12,
+      "trimX": 25,
+      "trimY": 4,
+      "width": 1472,
+      "height": 96,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

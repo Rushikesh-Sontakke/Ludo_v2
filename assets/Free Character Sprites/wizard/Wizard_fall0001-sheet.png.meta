@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8c3f4675-897f-47ad-a26f-e45bcdfed262",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Wizard_fall0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "3ce606f0-b563-4916-9925-01a9c1294564",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8c3f4675-897f-47ad-a26f-e45bcdfed262",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": 12.5,
+      "trimX": 24,
+      "trimY": 0,
+      "width": 1473,
+      "height": 103,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

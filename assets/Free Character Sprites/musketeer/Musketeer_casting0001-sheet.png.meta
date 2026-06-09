@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5960e3ee-dbc7-4e68-88b8-754a5a896aad",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_casting0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "e1ac7259-e000-4994-a89a-96cb5ac6ba7d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5960e3ee-dbc7-4e68-88b8-754a5a896aad",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -10.5,
+      "offsetY": 6.5,
+      "trimX": 30,
+      "trimY": 7,
+      "width": 1455,
+      "height": 101,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

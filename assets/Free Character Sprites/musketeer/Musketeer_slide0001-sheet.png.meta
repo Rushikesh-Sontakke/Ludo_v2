@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "310f2598-3e89-4e30-be45-1eaedf8eddcf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_slide0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "b7401a51-6ca9-4582-b945-dba65b0e5ff6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "310f2598-3e89-4e30-be45-1eaedf8eddcf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -17.5,
+      "offsetY": 3.5,
+      "trimX": 9,
+      "trimY": 13,
+      "width": 1483,
+      "height": 95,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

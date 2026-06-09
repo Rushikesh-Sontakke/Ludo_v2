@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8fa259c8-7acf-4d37-a3c8-bc13d9aa7988",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_climb_side0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "8ec28f51-9623-44be-aca3-2eb9180a6d86",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8fa259c8-7acf-4d37-a3c8-bc13d9aa7988",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -22.5,
+      "offsetY": 7,
+      "trimX": 10,
+      "trimY": 6,
+      "width": 1471,
+      "height": 102,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

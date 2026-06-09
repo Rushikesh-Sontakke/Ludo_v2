@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e8f64797-3515-4b2a-a9a6-60cefe1a5978",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Pirate_fall0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "d3769466-405c-44a4-9a9f-f75974e1cf71",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e8f64797-3515-4b2a-a9a6-60cefe1a5978",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7,
+      "offsetY": 14,
+      "trimX": 26,
+      "trimY": 1,
+      "width": 1470,
+      "height": 98,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ca009d6b-cb35-4efa-a369-ab3e67486cc6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "knight_air_roll0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "c013c063-7ee5-44b8-bc37-92252c734714",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ca009d6b-cb35-4efa-a369-ab3e67486cc6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -19.5,
+      "offsetY": 6,
+      "trimX": 20,
+      "trimY": 8,
+      "width": 1457,
+      "height": 100,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

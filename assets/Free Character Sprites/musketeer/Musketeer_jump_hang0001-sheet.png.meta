@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "37dafb75-e8fa-4bd3-b16d-4cff14175d07",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Musketeer_jump_hang0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "6a33f84e-940a-4587-bb95-43be12022133",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "37dafb75-e8fa-4bd3-b16d-4cff14175d07",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -16,
+      "offsetY": 8,
+      "trimX": 24,
+      "trimY": 4,
+      "width": 1456,
+      "height": 104,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

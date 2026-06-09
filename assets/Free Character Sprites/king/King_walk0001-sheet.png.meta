@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "90419461-23b2-4c11-a57b-5f17ede48ee5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1536,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "King_walk0001-sheet": {
+      "ver": "1.0.6",
+      "uuid": "037fddf2-e834-4b40-a2a7-feffaf9ce7a8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "90419461-23b2-4c11-a57b-5f17ede48ee5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -10.5,
+      "offsetY": 5,
+      "trimX": 32,
+      "trimY": 10,
+      "width": 1451,
+      "height": 98,
+      "rawWidth": 1536,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
