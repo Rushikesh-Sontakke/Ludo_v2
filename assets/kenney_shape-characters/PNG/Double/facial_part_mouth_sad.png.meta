@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d53c7dbe-3b17-4630-ae77-aec6459162ec",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 40,
+  "height": 14,
+  "platformSettings": {},
+  "subMetas": {
+    "facial_part_mouth_sad": {
+      "ver": "1.0.6",
+      "uuid": "936a1088-6963-4ba9-be57-d970d9d06ea9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d53c7dbe-3b17-4630-ae77-aec6459162ec",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 40,
+      "height": 14,
+      "rawWidth": 40,
+      "rawHeight": 14,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

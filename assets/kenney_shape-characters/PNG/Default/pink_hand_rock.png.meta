@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b420001e-8a00-4a3f-b45c-a99244a5c98a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 36,
+  "height": 38,
+  "platformSettings": {},
+  "subMetas": {
+    "pink_hand_rock": {
+      "ver": "1.0.6",
+      "uuid": "fbad0da8-8b18-48b3-9b2c-1e8a2f2944e0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b420001e-8a00-4a3f-b45c-a99244a5c98a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 36,
+      "height": 38,
+      "rawWidth": 36,
+      "rawHeight": 38,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
