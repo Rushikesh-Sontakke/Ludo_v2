@@ -23,6 +23,9 @@ export default class GameManager extends cc.Component {
     @property({ type: BoardManager })
     board: BoardManager = null;
 
+    @property({ type: cc.Label, tooltip: "Label to display whose turn it is" })
+    turnLabel: cc.Label = null;
+
     @property({ type: [cc.Node], tooltip: "All piece nodes in the scene (any order)" })
     pieceNodes: cc.Node[] = [];
 
@@ -74,6 +77,15 @@ export default class GameManager extends cc.Component {
         this._state = TurnState.WaitingRoll;
         this._currentRoll = 0;
         this.events.emit(GameEvent.TURN_CHANGED, this.currentColor);
+
+        if (this.turnLabel) {
+            const colorNames = ["Red", "Blue", "Green", "Yellow"];
+            this.turnLabel.string = colorNames[this.currentColor] + "'s Turn!";
+
+            // Change the text color to match the player!
+            const colors = [cc.Color.RED, cc.Color.BLUE, cc.Color.GREEN, cc.Color.YELLOW];
+            this.turnLabel.node.color = colors[this.currentColor];
+        }
     }
 
     /** Hook the dice-roll UI button to this. */

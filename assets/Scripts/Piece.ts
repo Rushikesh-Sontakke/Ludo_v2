@@ -43,6 +43,7 @@ export default class Piece extends cc.Component {
 
     private _moving = false;
     private _baseScale: number = 1.0;
+    private _highlightTween: cc.Tween = null;
 
     onLoad() {
         this._baseScale = this.node.scale; // Remember the scale set in the editor!
@@ -77,6 +78,31 @@ export default class Piece extends cc.Component {
     public setHighlight(on: boolean) {
         this.selectable = on;
         if (this.highlight) this.highlight.active = on;
+        
+        // In Cocos, zIndex only sorts siblings. Because your pieces are inside 
+        // 4 different color folders, we have to bring the FOLDER to the front too!
+        this.node.zIndex = on ? 100 : 0;
+        this.node.parent.zIndex = on ? 10 : 0;
+        
+        // Stop any existing breathing animation
+        if (this._highlightTween) {
+            this._highlightTween.stop();
+            this._highlightTween = null;
+        }
+        
+        if (on) {
+            // Pulse animation: makes it much larger so the sweet spot is huge!
+            this._highlightTween = cc.tween(this.node)
+                .repeatForever(
+                    cc.tween()
+                        .to(0.4, { scale: this._baseScale * 1.35 }, { easing: "sineInOut" })
+                        .to(0.4, { scale: this._baseScale * 1.10 }, { easing: "sineInOut" })
+                )
+                .start();
+        } else {
+            // Instantly snap back to normal size when it's no longer highlighted
+            this.node.scale = this._baseScale;
+        }
     }
 
     public setShield(on: boolean) {
@@ -87,11 +113,33 @@ export default class Piece extends cc.Component {
     public isInBase(): boolean { return this.progress === 0; }
     public isFinished(): boolean { return this.progress >= HOME_PROGRESS; }
 
+    // Offset pieces slightly so multiple pieces on a safe cell don't perfectly overlap!
+    private _getOffset(): cc.Vec2 {
+        if (this.progress === 0) return cc.v2(0, 0); // Perfectly centered in base
+        
+        // Shift them slightly based on color so they don't overlap perfectly.
+        // We avoid negative Y offsets so their feet don't poke out the bottom of the tiles!
+        const offsets = [
+            cc.v2(-8, 0),   // Red (Left)
+            cc.v2(8, 0),    // Blue (Right)
+            cc.v2(-8, 12),  // Green (Top-Left)
+            cc.v2(8, 12)    // Yellow (Top-Right)
+        ];
+        
+        // Add a tiny stagger based on piece index so same-color pieces spread out too
+        const stagger = (this.pieceIndex - 1.5) * 3;
+        return cc.v2(offsets[this.color].x + stagger, offsets[this.color].y + stagger);
+    }
+
     /** Snap instantly to current progress (used on setup / capture reset). */
     public snapToProgress() {
         const board = BoardManager.instance;
         const wp = board.getWorldPosForProgress(this.color, this.progress, this.pieceIndex);
-        this.node.setPosition(this.node.parent.convertToNodeSpaceAR(wp));
+        const local = this.node.parent.convertToNodeSpaceAR(wp);
+        const offset = this._getOffset();
+        local.x += offset.x;
+        local.y += offset.y;
+        this.node.setPosition(local);
     }
 
     /**
@@ -104,10 +152,10 @@ export default class Piece extends cc.Component {
             this._playAnim("walk");
             const board = BoardManager.instance;
 
-            // Leaving base is a single jump onto the entry cell (progress 1).
+            // Leaving base takes exactly 1 step to get onto the entry cell,
+            // consuming the entire roll of 6!
             if (this.progress === 0) {
-                this.progress = 1;
-                steps -= 1; // the "6" that let us out counts as reaching cell 1
+                steps = 1; 
             }
 
             const target = this.progress + steps;
@@ -121,6 +169,10 @@ export default class Piece extends cc.Component {
                 this.progress += 1;
                 const wp = board.getWorldPosForProgress(this.color, this.progress, this.pieceIndex);
                 const local = this.node.parent.convertToNodeSpaceAR(wp);
+                const offset = this._getOffset();
+                local.x += offset.x;
+                local.y += offset.y;
+                
                 // A little arc + scale bounce relative to the editor scale!
                 cc.tween(this.node)
                     .to(0.12, { position: local }, { easing: "sineOut" })

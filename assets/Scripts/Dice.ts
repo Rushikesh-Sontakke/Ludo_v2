@@ -33,6 +33,10 @@ export default class Dice extends cc.Component {
 
     onLoad() {
         this._rb = this.getComponent(cc.RigidBody);
+        
+        // Force the dice to ALWAYS render at the absolute front of the screen
+        // so that highlighted pieces (which jump to zIndex 10) don't cover it!
+        this.node.zIndex = 1000;
     }
 
     /**
@@ -48,16 +52,14 @@ export default class Dice extends cc.Component {
             const value = 1 + Math.floor(Math.random() * 6); // fair 1..6
 
             if (this._rb) {
-                // Toss: upward impulse + random sideways nudge + spin.
-                this._rb.linearVelocity = cc.v2(0, 0);
-                this._rb.angularVelocity = 0;
-                const lateral = (Math.random() - 0.5) * 4;
-                this._rb.applyLinearImpulse(
-                    cc.v2(lateral, this.launchImpulse),
-                    this._rb.getWorldCenter(),
-                    true
-                );
-                this._rb.applyTorque((Math.random() - 0.5) * 8, true);
+                // Toss: upward velocity + random sideways nudge + spin.
+                // We use direct velocity instead of impulse so it always bounces high 
+                // regardless of how heavy the collider is!
+                const lateralVel = (Math.random() - 0.5) * 300;
+                const upwardVel = 800 + (Math.random() * 200); // Shoot up fast!
+
+                this._rb.linearVelocity = cc.v2(lateralVel, upwardVel);
+                this._rb.angularVelocity = (Math.random() - 0.5) * 3000; // Crazy spin!
             }
 
             // After the tumble, lock the die and show the chosen face.
