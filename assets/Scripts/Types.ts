@@ -28,12 +28,12 @@ export const HOME_COLUMN_SIZE = 6;        // 52..57 inclusive = 6 cells
 
 // Each color enters the ring at a different cell. Tune these to match your
 // board art (these are the classic offsets for a standard board).
-// Clockwise from Red (bottom-right): Red → Blue (top-right) → Yellow (top-left) → Green (bottom-left)
+// Clockwise from Red (bottom-right): Red(0) → Green(13) → Yellow(26) → Blue(39)
 export const ENTRY_OFFSET: { [key in PlayerColor]: number } = {
     [PlayerColor.Red]: 0,
-    [PlayerColor.Blue]: 13,
+    [PlayerColor.Green]: 13,
     [PlayerColor.Yellow]: 26,
-    [PlayerColor.Green]: 39,
+    [PlayerColor.Blue]: 39,
 };
 
 // Safe ring cells (absolute indices). A piece on a safe cell cannot be captured.

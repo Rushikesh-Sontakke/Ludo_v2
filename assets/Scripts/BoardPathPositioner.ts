@@ -6,7 +6,7 @@
 //   Yellow = top-left  | Blue  = top-right
 //   Green  = bot-left  | Red   = bot-right
 //
-// Ring goes clockwise: Red(0) → Blue(13) → Yellow(26) → Green(39)
+// Ring goes clockwise: Red(0) → Green(13) → Yellow(26) → Blue(39)
 
 const { ccclass, property, executeInEditMode } = cc._decorator;
 
@@ -45,7 +45,7 @@ export default class BoardPathPositioner extends cc.Component {
 
         // ── 52 main ring cells ───────────────────────────────────────────────
         // Traced clockwise on the 15x15 grid (col, row), origin = top-left.
-        // Entry cells: Red=0 (8,13)  Blue=13 (13,6)  Yellow=26 (6,1)  Green=39 (1,8)
+        // Entry cells: Red=0 (8,13)  Green=13 (13,6)  Yellow=26 (6,1)  Blue=39 (1,8)
         const ring: [number, number][] = [
             // Up right side of bottom arm  → Red entry @ index 0
             [8,13],[8,12],[8,11],[8,10],[8,9],
@@ -53,7 +53,7 @@ export default class BoardPathPositioner extends cc.Component {
             [9,8],[10,8],[11,8],[12,8],[13,8],[14,8],
             // Right edge going up
             [14,7],[14,6],
-            // Right arm top, going left  → Blue entry @ index 13
+            // Right arm top, going left  → Green entry @ index 13
             [13,6],[12,6],[11,6],[10,6],[9,6],
             // Top arm right side, going up
             [8,5],[8,4],[8,3],[8,2],[8,1],[8,0],
@@ -65,7 +65,7 @@ export default class BoardPathPositioner extends cc.Component {
             [5,6],[4,6],[3,6],[2,6],[1,6],[0,6],
             // Left edge going down
             [0,7],[0,8],
-            // Left arm bottom, going right  → Green entry @ index 39
+            // Left arm bottom, going right  → Blue entry @ index 39
             [1,8],[2,8],[3,8],[4,8],[5,8],
             // Bottom arm left side, going down
             [6,9],[6,10],[6,11],[6,12],[6,13],[6,14],
@@ -86,12 +86,12 @@ export default class BoardPathPositioner extends cc.Component {
         const homePaths: { name: string; cells: [number, number][] }[] = [
             // Red:    right arm, row 7, going LEFT toward center
             { name: "HomePath_Red",    cells: [[13,7],[12,7],[11,7],[10,7],[9,7],[8,7]] },
-            // Blue:   top arm,   col 7, going DOWN toward center
-            { name: "HomePath_Blue",   cells: [[7,1],[7,2],[7,3],[7,4],[7,5],[7,6]] },
-            // Green:  bottom arm,col 7, going UP toward center
-            { name: "HomePath_Green",  cells: [[7,13],[7,12],[7,11],[7,10],[7,9],[7,8]] },
-            // Yellow: left arm,  row 7, going RIGHT toward center
+            // Green:  top arm,   col 7, going DOWN toward center  (Green enters at index 13)
+            { name: "HomePath_Green",  cells: [[7,1],[7,2],[7,3],[7,4],[7,5],[7,6]] },
+            // Yellow: left arm,  row 7, going RIGHT toward center (Yellow enters at index 26)
             { name: "HomePath_Yellow", cells: [[1,7],[2,7],[3,7],[4,7],[5,7],[6,7]] },
+            // Blue:   bottom arm,col 7, going UP toward center    (Blue enters at index 39)
+            { name: "HomePath_Blue",   cells: [[7,13],[7,12],[7,11],[7,10],[7,9],[7,8]] },
         ];
 
         for (const hp of homePaths) {

@@ -42,16 +42,28 @@ export default class Piece extends cc.Component {
     public onClicked: (piece: Piece) => void = null;
 
     private _moving = false;
+    private _baseScale: number = 1.0;
 
     onLoad() {
+        this._baseScale = this.node.scale; // Remember the scale set in the editor!
+        
         this.node.on(cc.Node.EventType.TOUCH_END, this._handleTap, this);
         this.setHighlight(false);
         if (this.shieldFx) this.shieldFx.active = false;
         this._playAnim("idle");
     }
 
-    private _playAnim(clipName: string) {
+    private _playAnim(type: "idle" | "walk") {
         if (!this.anim) return;
+        const clips = this.anim.getClips();
+        if (!clips || clips.length === 0) return;
+        
+        // Assume clip[0] is Idle, and clip[1] is Walk (if it exists)
+        let clipName = clips[0].name; 
+        if (type === "walk" && clips.length > 1) {
+            clipName = clips[1].name;
+        }
+        
         const state = this.anim.getAnimationState(clipName);
         if (state) this.anim.play(clipName);
     }
@@ -109,11 +121,11 @@ export default class Piece extends cc.Component {
                 this.progress += 1;
                 const wp = board.getWorldPosForProgress(this.color, this.progress, this.pieceIndex);
                 const local = this.node.parent.convertToNodeSpaceAR(wp);
-                // A little arc + scale bounce = "action motion" animation points.
+                // A little arc + scale bounce relative to the editor scale!
                 cc.tween(this.node)
                     .to(0.12, { position: local }, { easing: "sineOut" })
-                    .to(0.06, { scale: 1.15 })
-                    .to(0.06, { scale: 1.0 })
+                    .to(0.06, { scale: this._baseScale * 1.15 })
+                    .to(0.06, { scale: this._baseScale })
                     .call(hop)
                     .start();
             };
