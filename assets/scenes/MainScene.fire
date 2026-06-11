@@ -110,8 +110,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -122,8 +122,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        480,
-        320,
+        960,
+        540,
         0,
         0,
         0,
@@ -1422,7 +1422,9 @@
     "bgmGame": {
       "__uuid__": "b5d379b7-c38a-4089-b4fd-d98b7d69c6de"
     },
-    "sfxDice": null,
+    "sfxDice": {
+      "__uuid__": "cd5cad62-7dcd-4a21-b361-cfaecf9ea2a6"
+    },
     "sfxMove": null,
     "sfxCapture": null,
     "sfxAbility": null,
