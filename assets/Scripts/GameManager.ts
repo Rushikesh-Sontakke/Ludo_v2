@@ -113,6 +113,25 @@ export default class GameManager extends cc.Component {
         for (const p of pieces) p.setHighlight(false);
     }
 
+    /** Called by AbilitySystem when the player uses Re-Roll. */
+    public async forceReroll() {
+        if (this._state !== TurnState.WaitingSelect) return;
+        this._clearHighlights();
+        this._state = TurnState.Moving; // prevent double-clicks
+
+        const value = await this.dice.roll();
+        this._currentRoll = value;
+        this.events.emit(GameEvent.DICE_ROLLED, value);
+
+        const legal = this.getLegalMoves(this.currentColor, value);
+        if (legal.length === 0) {
+            this._endTurn(value === 6);
+            return;
+        }
+        this._state = TurnState.WaitingSelect;
+        for (const p of legal) p.setHighlight(true);
+    }
+
     public async onPieceClicked(piece: Piece) {
         if (this._state !== TurnState.WaitingSelect) return;
         if (piece.color !== this.currentColor) return;

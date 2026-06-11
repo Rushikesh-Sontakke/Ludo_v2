@@ -2,11 +2,11 @@
 // Three "operations other than moving" for the 9% rubric line:
 //   1) Shield      - protect a chosen piece from capture until your next turn
 //   2) Double Move - your next move covers 2x the dice value
-//   3) Recall      - send one of your own ring pieces back to base to dodge/reposition
+//   3) Re-Roll     - discard your current roll and roll the dice again
 // Each ability has a limited number of uses per player per game.
 //
 // EDITOR SETUP: hook each UI button to the matching on* method. The player then
-// clicks one of their pieces (for Shield / Recall) the same way they move.
+// clicks one of their pieces (for Shield) the same way they move.
 
 import { PlayerColor, GameEvent } from "./Types";
 import GameManager from "./GameManager";
@@ -29,7 +29,7 @@ export default class AbilitySystem extends cc.Component {
 
     start() {
         for (let c = 0; c < 4; c++) {
-            this._remaining[c] = { shield: this.usesPerAbility, double: this.usesPerAbility, recall: this.usesPerAbility };
+            this._remaining[c] = { shield: this.usesPerAbility, double: this.usesPerAbility, reroll: this.usesPerAbility };
         }
     }
 
@@ -60,11 +60,14 @@ export default class AbilitySystem extends cc.Component {
         this._highlightOwnPieces(true);
     }
 
-    // ---- 3) Recall: arm, then player clicks a ring piece to send home ----
-    public onRecallPressed() {
-        if (!this._canUse("recall")) return;
-        this._awaitingTarget = "recall";
-        this._highlightOwnPieces(true);
+    // ---- 3) Re-Roll: discard current roll and roll again ----
+    public async onRerollPressed() {
+        if (!this._canUse("reroll")) return;
+        // Only meaningful after a roll, before you pick a piece.
+        if (this.game.currentRoll <= 0) return;
+        this._consume("reroll");
+        // Tell GameManager to roll the dice again!
+        this.game.forceReroll();
     }
 
     private _highlightOwnPieces(on: boolean) {
@@ -85,11 +88,6 @@ export default class AbilitySystem extends cc.Component {
         if (this._awaitingTarget === "shield") {
             piece.setShield(true);
             this._consume("shield");
-        } else if (this._awaitingTarget === "recall") {
-            if (!piece.isInBase() && !piece.isFinished()) {
-                piece.sendHomeToBase();
-                this._consume("recall");
-            }
         }
         this._awaitingTarget = null;
         this._highlightOwnPieces(false); // restores normal click routing
