@@ -1419,7 +1419,9 @@
     "bgmMenu": {
       "__uuid__": "d2ca2026-635a-4ef7-a3a4-2c37ad11bc04"
     },
-    "bgmGame": null,
+    "bgmGame": {
+      "__uuid__": "b5d379b7-c38a-4089-b4fd-d98b7d69c6de"
+    },
     "sfxDice": null,
     "sfxMove": null,
     "sfxCapture": null,
