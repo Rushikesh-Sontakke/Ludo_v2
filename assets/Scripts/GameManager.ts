@@ -44,6 +44,7 @@ export default class GameManager extends cc.Component {
 
     // Ability hooks (set by AbilitySystem before a move resolves).
     public pendingDoubleMove = false;
+    public rerollRequested = false;
 
     get currentColor(): PlayerColor { return this.turnOrder[this._turnIndex] as PlayerColor; }
     get currentRoll(): number { return this._currentRoll; }
@@ -92,6 +93,7 @@ export default class GameManager extends cc.Component {
     public async onRollPressed() {
         if (this._state !== TurnState.WaitingRoll) return;
         this._state = TurnState.Moving;
+        this.rerollRequested = false;
 
         const value = await this.dice.roll();
         this._currentRoll = value;
@@ -99,13 +101,38 @@ export default class GameManager extends cc.Component {
 
         const legal = this.getLegalMoves(this.currentColor, value);
         if (legal.length === 0) {
-            // No move possible — pass (unless a 6 with all pieces home, etc.)
+            // Give the player 2 seconds to click Re-Roll before auto-passing!
+            this._state = TurnState.WaitingSelect; // Allow Re-Roll to work
+            await this._waitForReroll(2.0);
+            
+            if (this.rerollRequested) {
+                // Player used Re-Roll! forceReroll handles everything from here.
+                return;
+            }
+            // Nobody clicked Re-Roll, auto-pass.
             this._endTurn(value === 6);
             return;
         }
         // Highlight the movable pieces and wait for a click.
         this._state = TurnState.WaitingSelect;
         for (const p of legal) p.setHighlight(true);
+    }
+
+    /** Wait for a short window, returning early if Re-Roll is clicked. */
+    private _waitForReroll(seconds: number): Promise<void> {
+        return new Promise((resolve) => {
+            const checkInterval = 0.1; // check every 100ms
+            let elapsed = 0;
+            const timer = () => {
+                elapsed += checkInterval;
+                if (this.rerollRequested || elapsed >= seconds) {
+                    resolve();
+                    return;
+                }
+                this.scheduleOnce(timer, checkInterval);
+            };
+            this.scheduleOnce(timer, checkInterval);
+        });
     }
 
     private _clearHighlights() {
@@ -115,9 +142,14 @@ export default class GameManager extends cc.Component {
 
     /** Called by AbilitySystem when the player uses Re-Roll. */
     public async forceReroll() {
-        if (this._state !== TurnState.WaitingSelect) return;
+        this.rerollRequested = true;
+        
+        // Small delay to let onRollPressed's _waitForReroll detect the flag first
+        await new Promise<void>((resolve) => this.scheduleOnce(resolve, 0.2));
+        
         this._clearHighlights();
-        this._state = TurnState.Moving; // prevent double-clicks
+        this._state = TurnState.Moving;
+        this.rerollRequested = false;
 
         const value = await this.dice.roll();
         this._currentRoll = value;

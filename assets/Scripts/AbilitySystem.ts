@@ -61,12 +61,9 @@ export default class AbilitySystem extends cc.Component {
     }
 
     // ---- 3) Re-Roll: discard current roll and roll again ----
-    public async onRerollPressed() {
+    public onRerollPressed() {
         if (!this._canUse("reroll")) return;
-        // Only meaningful after a roll, before you pick a piece.
-        if (this.game.currentRoll <= 0) return;
         this._consume("reroll");
-        // Tell GameManager to roll the dice again!
         this.game.forceReroll();
     }
 
