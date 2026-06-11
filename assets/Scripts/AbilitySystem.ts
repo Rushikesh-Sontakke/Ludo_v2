@@ -11,6 +11,7 @@
 import { PlayerColor, GameEvent } from "./Types";
 import GameManager from "./GameManager";
 import Piece from "./Piece";
+import AudioManager from "./AudioManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -42,6 +43,7 @@ export default class AbilitySystem extends cc.Component {
         const color = this.game.currentColor;
         this._remaining[color][id] -= 1;
         this.game.events.emit(GameEvent.ABILITY_USED, id);
+        if (AudioManager.instance) AudioManager.instance.playSfx("ability");
     }
 
     // ---- 1) Double Move: no target, affects the move you're about to make ----
@@ -61,12 +63,9 @@ export default class AbilitySystem extends cc.Component {
     }
 
     // ---- 3) Re-Roll: discard current roll and roll again ----
-    public async onRerollPressed() {
+    public onRerollPressed() {
         if (!this._canUse("reroll")) return;
-        // Only meaningful after a roll, before you pick a piece.
-        if (this.game.currentRoll <= 0) return;
         this._consume("reroll");
-        // Tell GameManager to roll the dice again!
         this.game.forceReroll();
     }
 

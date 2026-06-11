@@ -33,6 +33,11 @@ export default class AudioManager extends cc.Component {
         cc.game.addPersistRootNode(this.node);
     }
 
+    start() {
+        // Auto-play menu BGM as soon as the scene loads!
+        this.playBgm("menu");
+    }
+
     public playBgm(which: "menu" | "game") {
         const clip = which === "menu" ? this.bgmMenu : this.bgmGame;
         if (!clip) return;

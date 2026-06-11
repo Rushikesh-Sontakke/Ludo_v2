@@ -9,6 +9,7 @@ import {
 import BoardManager from "./BoardManager";
 import Piece from "./Piece";
 import Dice from "./Dice";
+import AudioManager from "./AudioManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -44,6 +45,7 @@ export default class GameManager extends cc.Component {
 
     // Ability hooks (set by AbilitySystem before a move resolves).
     public pendingDoubleMove = false;
+    public rerollRequested = false;
 
     get currentColor(): PlayerColor { return this.turnOrder[this._turnIndex] as PlayerColor; }
     get currentRoll(): number { return this._currentRoll; }
@@ -70,6 +72,9 @@ export default class GameManager extends cc.Component {
             p.snapToProgress();
         }
         this._beginTurn();
+
+        // Switch to game BGM (AudioManager persists from the first scene)
+        if (AudioManager.instance) AudioManager.instance.playBgm("game");
     }
 
     // ---------------------------------------------------------------- turn flow
@@ -96,10 +101,11 @@ export default class GameManager extends cc.Component {
         const value = await this.dice.roll();
         this._currentRoll = value;
         this.events.emit(GameEvent.DICE_ROLLED, value);
+        if (AudioManager.instance) AudioManager.instance.playSfx("dice");
 
         const legal = this.getLegalMoves(this.currentColor, value);
         if (legal.length === 0) {
-            // No move possible — pass (unless a 6 with all pieces home, etc.)
+            // No move possible — auto-pass immediately.
             this._endTurn(value === 6);
             return;
         }
@@ -115,9 +121,14 @@ export default class GameManager extends cc.Component {
 
     /** Called by AbilitySystem when the player uses Re-Roll. */
     public async forceReroll() {
-        if (this._state !== TurnState.WaitingSelect) return;
+        this.rerollRequested = true;
+
+        // Small delay to let onRollPressed's _waitForReroll detect the flag first
+        await new Promise<void>((resolve) => this.scheduleOnce(resolve, 0.2));
+
         this._clearHighlights();
-        this._state = TurnState.Moving; // prevent double-clicks
+        this._state = TurnState.Moving;
+        this.rerollRequested = false;
 
         const value = await this.dice.roll();
         this._currentRoll = value;
@@ -148,6 +159,7 @@ export default class GameManager extends cc.Component {
 
         await piece.moveStepByStep(steps);
         this.events.emit(GameEvent.PIECE_MOVED, piece);
+        if (AudioManager.instance) AudioManager.instance.playSfx("move");
 
         // Reaching the final home cell?
         if (piece.progress >= HOME_PROGRESS) {
@@ -162,6 +174,7 @@ export default class GameManager extends cc.Component {
         if (this._checkWin(this.currentColor)) {
             this._state = TurnState.GameOver;
             this.events.emit(GameEvent.GAME_WON, this.currentColor);
+            if (AudioManager.instance) AudioManager.instance.playSfx("win");
             return;
         }
 
@@ -211,6 +224,7 @@ export default class GameManager extends cc.Component {
                 if (enemyCell === cell) {
                     enemy.sendHomeToBase();
                     this.events.emit(GameEvent.PIECE_CAPTURED, enemy);
+                    if (AudioManager.instance) AudioManager.instance.playSfx("capture");
                 }
             }
         }
