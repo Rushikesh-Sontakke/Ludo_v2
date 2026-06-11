@@ -82,18 +82,21 @@
       },
       {
         "__id__": 29
+      },
+      {
+        "__id__": 38
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 38
-      },
-      {
-        "__id__": 39
-      },
-      {
         "__id__": 40
+      },
+      {
+        "__id__": 41
+      },
+      {
+        "__id__": 42
       }
     ],
     "_prefab": null,
@@ -107,8 +110,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1920,
-      "height": 1080
+      "width": 960,
+      "height": 640
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -119,8 +122,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        960,
-        540,
+        480,
+        320,
         0,
         0,
         0,
@@ -267,8 +270,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240.09,
-      "height": 88.2
+      "width": 280,
+      "height": 189
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -279,8 +282,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -3.262,
-        202.22,
+        13.682,
+        190,
         0,
         0,
         0,
@@ -321,11 +324,13 @@
     "_dstBlendFactor": 771,
     "_string": "Register ",
     "_N$string": "Register ",
-    "_fontSize": 60,
-    "_lineHeight": 70,
+    "_fontSize": 70,
+    "_lineHeight": 150,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "ada59a4e-b67d-4637-8bba-2faac0179dd2"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
@@ -339,7 +344,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "UsernameEditBox",
+    "_name": "EmailEditBox",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -372,8 +377,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 70
+      "width": 220,
+      "height": 36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -437,8 +442,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 70
+      "width": 220,
+      "height": 36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -682,8 +687,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 398,
-      "height": 70
+      "width": 218,
+      "height": 36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -694,8 +699,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -198,
-        35,
+        -108,
+        18,
         0,
         0,
         0,
@@ -734,9 +739,9 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "Choose Username",
-    "_N$string": "Choose Username",
-    "_fontSize": 40,
+    "_string": "Email",
+    "_N$string": "Email",
+    "_fontSize": 20,
     "_lineHeight": 25,
     "_enableWrapText": false,
     "_N$file": null,
@@ -789,7 +794,7 @@
     "_enabled": true,
     "_string": "",
     "returnType": 0,
-    "maxLength": 8,
+    "maxLength": 20,
     "_tabIndex": 0,
     "editingDidBegan": [],
     "textChanged": [],
@@ -844,8 +849,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 70
+      "width": 220,
+      "height": 35
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -856,8 +861,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -2.973,
-        -127.848,
+        0,
+        -60.96,
         0,
         0,
         0,
@@ -909,8 +914,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 70
+      "width": 220,
+      "height": 35
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1154,8 +1159,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 398,
-      "height": 70
+      "width": 218,
+      "height": 35
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1166,8 +1171,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -198,
-        35,
+        -108,
+        17.5,
         0,
         0,
         0,
@@ -1208,7 +1213,7 @@
     "_dstBlendFactor": 771,
     "_string": "Choose Password",
     "_N$string": "Choose Password",
-    "_fontSize": 40,
+    "_fontSize": 20,
     "_lineHeight": 25,
     "_enableWrapText": false,
     "_N$file": null,
@@ -1306,8 +1311,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 440,
-      "height": 110
+      "width": 200,
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1318,8 +1323,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        16.587,
-        -257.106,
+        8.986,
+        -179.576,
         0,
         0,
         0,
@@ -1372,8 +1377,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
-      "height": 90
+      "width": 200,
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1384,8 +1389,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -16.761,
-        -5.45,
+        1.481,
+        0.631,
         0,
         0,
         0,
@@ -1441,8 +1446,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
-      "height": 90
+      "width": 200,
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1503,8 +1508,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 119.51,
-      "height": 63
+      "width": 59.75,
+      "height": 31.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1557,8 +1562,8 @@
     "_dstBlendFactor": 771,
     "_string": "Enter",
     "_N$string": "Enter",
-    "_fontSize": 50,
-    "_lineHeight": 50,
+    "_fontSize": 25,
+    "_lineHeight": 25,
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -1729,6 +1734,101 @@
     "customEventData": ""
   },
   {
+    "__type__": "cc.Node",
+    "_name": "MessageLabel",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 39
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 50.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        10.19,
+        392.331,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "f39TBiOolJ54Hoqc+BcsDn"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 38
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_string": "",
+    "_N$string": "",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "87UbWJ4MZJKJfVtaGmyvwN"
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -1738,8 +1838,8 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 1920,
-      "height": 1080
+      "width": 960,
+      "height": 640
     },
     "_fitWidth": false,
     "_fitHeight": true,
@@ -1780,11 +1880,14 @@
       "__id__": 2
     },
     "_enabled": true,
-    "usernameEditBox": {
+    "emailEditBox": {
       "__id__": 17
     },
     "passwordEditBox": {
       "__id__": 28
+    },
+    "messageLabel": {
+      "__id__": 39
     },
     "_id": "b3WuinqKtK9aM+ZRJGk8Tx"
   }
