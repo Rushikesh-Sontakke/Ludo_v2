@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bcc702b1-3a92-41b0-8177-f572411f9c46",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1254,
+  "height": 1254,
+  "platformSettings": {},
+  "subMetas": {
+    "BattleLudoName": {
+      "ver": "1.0.6",
+      "uuid": "38b7ed97-49ec-4e1a-baa7-207f4a9ff3b2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bcc702b1-3a92-41b0-8177-f572411f9c46",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 9.5,
+      "offsetY": 0,
+      "trimX": 37,
+      "trimY": 171,
+      "width": 1199,
+      "height": 912,
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
