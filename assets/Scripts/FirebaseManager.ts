@@ -105,4 +105,16 @@ export default class FirebaseManager extends cc.Component {
         console.log("[loadSave] snap.exists:", snap.exists, "| data:", snap.exists ? JSON.stringify(snap.data()).slice(0, 120) : "NONE");
         return snap.exists ? snap.data() : null;
     }
+
+    /** Deletes the current user's save slot. No-op if not signed in or no save exists. */
+    public async deleteSave(): Promise<void> {
+        const uid = this.uid;
+        console.log("[deleteSave] UID:", uid);
+        if (!uid) return;
+        if (!this._db) this.tryInit();
+        if (!this._db) return;
+        console.log("[deleteSave] Deleting: users/" + uid);
+        await this._db.collection("users").doc(uid).delete();
+        console.log("[deleteSave] Firestore delete SUCCESS.");
+    }
 }

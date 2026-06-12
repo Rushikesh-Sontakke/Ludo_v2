@@ -52,6 +52,12 @@ export default class UIManager extends cc.Component {
     }
     private _onGameWon(color: PlayerColor) {
         if (AudioManager.instance) AudioManager.instance.playSfx("win");
+
+        // The match is finished — clear the cloud save so this completed game
+        // can't be reloaded on the next login.
+        const fm = FirebaseManager.instance;
+        if (fm) fm.deleteSave().catch((e) => console.error("[Win] deleteSave failed:", e));
+
         if (this.winLabel) this.winLabel.string = `${PlayerColor[color]} wins!`;
         if (this.winPanel) {
             this.winPanel.active = true;

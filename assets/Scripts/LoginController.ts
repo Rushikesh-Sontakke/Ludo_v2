@@ -96,8 +96,16 @@ export default class LoginController extends cc.Component {
         cc.director.loadScene("game");
     }
 
-    public onNewGameClick(): void {
+    public async onNewGameClick(): Promise<void> {
         SaveBridge.pendingSave = null;
+
+        // Delete any existing cloud save so the old game can't resurrect later.
+        const fm = FirebaseManager.instance;
+        if (fm) {
+            try { await fm.deleteSave(); }
+            catch (e) { console.error("[NewGame] deleteSave failed:", e); }
+        }
+
         cc.director.loadScene("game");
     }
 
