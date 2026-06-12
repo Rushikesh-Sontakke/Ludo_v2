@@ -43,6 +43,7 @@ export default class GameManager extends cc.Component {
     private _state = TurnState.WaitingRoll;
     private _currentRoll = 0;
     private _capturedThisTurn = false;
+    private _reachedHomeThisTurn = false;
 
     // Ability hooks (set by AbilitySystem before a move resolves).
     public pendingDoubleMove = false;
@@ -175,11 +176,13 @@ export default class GameManager extends cc.Component {
         }
 
         this._capturedThisTurn = false;
+        this._reachedHomeThisTurn = false;
         await piece.moveStepByStep(steps);
         this.events.emit(GameEvent.PIECE_MOVED, piece);
 
         // Reaching the final home cell?
         if (piece.progress >= HOME_PROGRESS) {
+            this._reachedHomeThisTurn = true;
             this.events.emit(GameEvent.PIECE_HOME, piece);
         } else {
             this.resolveCapture(piece);
@@ -195,8 +198,8 @@ export default class GameManager extends cc.Component {
             return;
         }
 
-        // Bonus turn on rolling a 6 OR capturing an enemy piece!
-        this._endTurn(this._currentRoll === 6 || this._capturedThisTurn);
+        // Bonus turn on rolling a 6, capturing an enemy, or reaching home!
+        this._endTurn(this._currentRoll === 6 || this._capturedThisTurn || this._reachedHomeThisTurn);
     }
 
     private _endTurn(samePlayerAgain: boolean) {

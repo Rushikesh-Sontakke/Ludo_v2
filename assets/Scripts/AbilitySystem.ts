@@ -24,6 +24,15 @@ export default class AbilitySystem extends cc.Component {
     @property({ tooltip: "Uses of each ability per player per game" })
     usesPerAbility: number = 2;
 
+    @property({ type: cc.Label, tooltip: "Label on the Double button (shows remaining uses)" })
+    doubleLabel: cc.Label = null;
+
+    @property({ type: cc.Label, tooltip: "Label on the Shield button (shows remaining uses)" })
+    shieldLabel: cc.Label = null;
+
+    @property({ type: cc.Label, tooltip: "Label on the Re-Roll button (shows remaining uses)" })
+    rerollLabel: cc.Label = null;
+
     // remaining[color][abilityId] = count
     private _remaining: { [color: number]: { [id: string]: number } } = {};
     private _awaitingTarget: string = null; // "shield" | "recall" | null
@@ -32,6 +41,18 @@ export default class AbilitySystem extends cc.Component {
         for (let c = 0; c < 4; c++) {
             this._remaining[c] = { shield: this.usesPerAbility, double: this.usesPerAbility, reroll: this.usesPerAbility };
         }
+
+        // Update labels whenever the turn changes or an ability is used
+        this.game.events.on(GameEvent.TURN_CHANGED, () => this._updateLabels(), this);
+        this.game.events.on(GameEvent.ABILITY_USED, () => this._updateLabels(), this);
+        this._updateLabels();
+    }
+
+    private _updateLabels() {
+        const color = this.game.currentColor;
+        if (this.doubleLabel) this.doubleLabel.string = `Double (${this.getRemaining(color, "double")})`;
+        if (this.shieldLabel) this.shieldLabel.string = `Shield (${this.getRemaining(color, "shield")})`;
+        if (this.rerollLabel) this.rerollLabel.string = `Re-Roll (${this.getRemaining(color, "reroll")})`;
     }
 
     private _canUse(id: string): boolean {
