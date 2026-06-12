@@ -10,6 +10,7 @@ import BoardManager from "./BoardManager";
 import Piece from "./Piece";
 import Dice from "./Dice";
 import AudioManager from "./AudioManager";
+import SaveBridge from "./SaveBridge";
 
 const { ccclass, property } = cc._decorator;
 
@@ -88,6 +89,13 @@ export default class GameManager extends cc.Component {
         }
 
         this._beginTurn();
+
+        // Restore a loaded save if one is waiting
+        const save = SaveBridge.pendingSave;
+        if (save && save.gameState) {
+            this.applyLoadedState(save.gameState);
+            SaveBridge.pendingSave = null;
+        }
 
         // Switch to game BGM (AudioManager persists from the first scene)
         if (AudioManager.instance) AudioManager.instance.playBgm("game");
@@ -255,5 +263,43 @@ export default class GameManager extends cc.Component {
 
     public getPieces(color: PlayerColor): Piece[] {
         return this._piecesByColor[color] || [];
+    }
+
+    // ---------------------------------------------------------- save / load
+    public getGameState(): object {
+        const pieces: any[] = [];
+        for (const key of Object.keys(this._piecesByColor)) {
+            for (const p of this._piecesByColor[Number(key)]) {
+                pieces.push({
+                    color: p.color,
+                    pieceIndex: p.pieceIndex,
+                    progress: p.progress,
+                    isShielded: p.isShielded,
+                });
+            }
+        }
+        return {
+            turnIndex: this._turnIndex,
+            turnOrder: [...this.turnOrder],
+            pieces,
+        };
+    }
+
+    public applyLoadedState(state: any): void {
+        if (!state) return;
+        if (typeof state.turnIndex === "number") {
+            this._turnIndex = Math.max(0, Math.min(state.turnIndex, this.turnOrder.length - 1));
+        }
+        if (Array.isArray(state.pieces)) {
+            for (const pd of state.pieces) {
+                const list = this._piecesByColor[pd.color] || [];
+                const p = list.find((x) => x.pieceIndex === pd.pieceIndex);
+                if (!p) continue;
+                p.progress = typeof pd.progress === "number" ? pd.progress : 0;
+                p.setShield(!!pd.isShielded);
+                p.snapToProgress();
+            }
+        }
+        this._beginTurn();
     }
 }

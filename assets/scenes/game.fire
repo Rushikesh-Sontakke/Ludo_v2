@@ -642,7 +642,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Dice",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -992,7 +992,7 @@
   {
     "__type__": "cc.Node",
     "_name": "flat_board2",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -7509,7 +7509,7 @@
   {
     "__type__": "cc.Node",
     "_name": "red_pieces",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -8292,7 +8292,7 @@
   {
     "__type__": "cc.Node",
     "_name": "blue_pieces",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -9075,7 +9075,7 @@
   {
     "__type__": "cc.Node",
     "_name": "yellow_pieces",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -9858,7 +9858,7 @@
   {
     "__type__": "cc.Node",
     "_name": "green_pieces",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -10621,7 +10621,7 @@
         "__id__": 241
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 249
@@ -11065,7 +11065,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "homebtn",
+    "_name": "saveexitbtn",
     "_objFlags": 0,
     "_parent": {
       "__id__": 232
@@ -11275,8 +11275,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "Home",
-    "_N$string": "Home",
+    "_string": "Save & Exit",
+    "_N$string": "Save & Exit",
     "_fontSize": 20,
     "_lineHeight": 40,
     "_enableWrapText": false,
@@ -11445,7 +11445,7 @@
     },
     "component": "",
     "_componentId": "3bc75nmsD5K3ZDgIQ8t+zFY",
-    "handler": "onReturnHome",
+    "handler": "onSaveAndExit",
     "customEventData": ""
   },
   {
@@ -12633,7 +12633,7 @@
   {
     "__type__": "cc.Node",
     "_name": "dice_floor",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -12749,7 +12749,7 @@
   {
     "__type__": "cc.Node",
     "_name": "dice_top",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -12865,7 +12865,7 @@
   {
     "__type__": "cc.Node",
     "_name": "dice_left",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -12981,7 +12981,7 @@
   {
     "__type__": "cc.Node",
     "_name": "dice_right",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -13097,7 +13097,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Roll Button",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -13482,7 +13482,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Btn_Double",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -13867,7 +13867,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Btn_Shield",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },

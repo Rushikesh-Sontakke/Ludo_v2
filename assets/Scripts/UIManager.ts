@@ -7,6 +7,7 @@
 
 import GameManager from "./GameManager";
 import AudioManager from "./AudioManager";
+import FirebaseManager from "./FirebaseManager";
 import { GameEvent, PlayerColor } from "./Types";
 
 const { ccclass, property } = cc._decorator;
@@ -72,6 +73,23 @@ export default class UIManager extends cc.Component {
         this._paused = false;
         if (this.pausePanel) this.pausePanel.active = false;
         cc.director.resume();
+    }
+
+    public async onSaveAndExit(): Promise<void> {
+        const fm = FirebaseManager.instance;
+        console.log("[SaveAndExit] fm:", fm ? "OK" : "NULL", "| game:", this.game ? "OK" : "NULL");
+        if (fm && this.game) {
+            try {
+                console.log("[SaveAndExit] Saving state...");
+                await fm.saveGame(this.game.getGameState());
+                console.log("[SaveAndExit] Save complete.");
+            } catch (e) {
+                console.error("[SaveAndExit] Save FAILED:", e);
+            }
+        } else {
+            console.error("[SaveAndExit] SKIPPED — missing fm or game reference.");
+        }
+        this._transitionToScene("MainScene");
     }
 
     public onReturnHome() { this._transitionToScene("MainScene"); }
