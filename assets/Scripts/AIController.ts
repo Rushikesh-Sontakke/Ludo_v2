@@ -17,7 +17,8 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class AIController extends cc.Component {
 
-    @property({ type: GameManager }) game: GameManager = null;
+    // We can just grab the global instance so you don't have to drag it in the editor!
+    game: GameManager = null;
 
     @property({ type: [cc.Integer], tooltip: "Colors controlled by AI, e.g. [1,3]" })
     aiColors: number[] = [PlayerColor.Green, PlayerColor.Yellow];
@@ -26,6 +27,7 @@ export default class AIController extends cc.Component {
     thinkTime = 0.6;
 
     onLoad() {
+        this.game = GameManager.instance;
         this.game.events.on(GameEvent.TURN_CHANGED, this._onTurnChanged, this);
     }
 

@@ -37,11 +37,16 @@ export default class AbilitySystem extends cc.Component {
     private _remaining: { [color: number]: { [id: string]: number } } = {};
     private _awaitingTarget: string = null; // "shield" | "recall" | null
 
-    start() {
+    onLoad() {
         for (let c = 0; c < 4; c++) {
             this._remaining[c] = { shield: this.usesPerAbility, double: this.usesPerAbility, reroll: this.usesPerAbility };
         }
 
+        // Register with GameManager so it can be saved/loaded
+        if (this.game) (this.game as any).abilitySystem = this;
+    }
+
+    start() {
         // Update labels whenever the turn changes or an ability is used
         this.game.events.on(GameEvent.TURN_CHANGED, () => this._updateLabels(), this);
         this.game.events.on(GameEvent.ABILITY_USED, () => this._updateLabels(), this);
@@ -60,10 +65,10 @@ export default class AbilitySystem extends cc.Component {
         return this._remaining[color][id] > 0;
     }
 
-    private _consume(id: string) {
+    private _consume(id: string, targetPiece: Piece | null = null) {
         const color = this.game.currentColor;
         this._remaining[color][id] -= 1;
-        this.game.events.emit(GameEvent.ABILITY_USED, id);
+        this.game.events.emit(GameEvent.ABILITY_USED, { id, piece: targetPiece });
         if (AudioManager.instance) AudioManager.instance.playSfx("ability");
     }
 
@@ -98,8 +103,18 @@ export default class AbilitySystem extends cc.Component {
                 p.setHighlight(!p.isFinished());
                 p.onClicked = (piece) => this._onAbilityTarget(piece);
             } else {
-                p.setHighlight(false);
                 p.onClicked = (piece) => this.game.onPieceClicked(piece);
+            }
+        }
+        
+        // BUGFIX: If we just turned off the ability targeting mode, and the game is waiting 
+        // for the player to move, we MUST restore the movement highlights! Otherwise the game soft-locks.
+        if (!on) {
+            if (this.game.state === 1 /* TurnState.WaitingSelect */) {
+                const legal = this.game.getLegalMoves(this.game.currentColor, this.game.currentRoll);
+                for (const p of pieces) p.setHighlight(legal.indexOf(p) !== -1);
+            } else {
+                for (const p of pieces) p.setHighlight(false);
             }
         }
     }
@@ -107,7 +122,7 @@ export default class AbilitySystem extends cc.Component {
     private _onAbilityTarget(piece: Piece) {
         if (this._awaitingTarget === "shield") {
             piece.setShield(true);
-            this._consume("shield");
+            this._consume("shield", piece);
         }
         this._awaitingTarget = null;
         this._highlightOwnPieces(false); // restores normal click routing
@@ -115,5 +130,16 @@ export default class AbilitySystem extends cc.Component {
 
     public getRemaining(color: PlayerColor, id: string): number {
         return this._remaining[color] ? this._remaining[color][id] : 0;
+    }
+
+    public getSaveState(): any {
+        return this._remaining;
+    }
+
+    public applySaveState(state: any) {
+        if (!state) return;
+        // Copy state so we don't accidentally mutate the saved object directly
+        this._remaining = JSON.parse(JSON.stringify(state));
+        this._updateLabels();
     }
 }

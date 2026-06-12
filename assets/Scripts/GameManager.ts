@@ -173,6 +173,11 @@ export default class GameManager extends cc.Component {
         if (this._state !== TurnState.WaitingSelect) return;
         if (piece.color !== this.currentColor) return;
 
+        // BUGFIX: Strictly validate that this piece is legally allowed to move!
+        // This prevents bugs where players could move pieces out of base without rolling a 6.
+        const legal = this.getLegalMoves(this.currentColor, this._currentRoll);
+        if (legal.indexOf(piece) === -1) return;
+
         this._clearHighlights();
         this._state = TurnState.Moving;
 
@@ -281,10 +286,14 @@ export default class GameManager extends cc.Component {
                 });
             }
         }
+        
+        const abilities = (this as any).abilitySystem ? (this as any).abilitySystem.getSaveState() : null;
+        
         return {
             turnIndex: this._turnIndex,
             turnOrder: [...this.turnOrder],
             pieces,
+            abilities
         };
     }
 
@@ -303,6 +312,11 @@ export default class GameManager extends cc.Component {
                 p.snapToProgress();
             }
         }
+        
+        if (state.abilities && (this as any).abilitySystem) {
+            (this as any).abilitySystem.applySaveState(state.abilities);
+        }
+        
         this._beginTurn();
     }
 }
