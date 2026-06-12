@@ -3,23 +3,10 @@ library/
 local/
 temp/
 node_modules/
+.firebase/
+.opencode.json
 .DS_Store
 assets/.DS_Store
-.cursorrules
-.windsurfrules
-AGENTS.md 
-BattleLudo_4Day_Plan.md 
-CLAUDE.md
-GEMINI.md 
-QODER.md
-README_SETUP.md 
 
-.claude 
-.cursor
-.gemini 
-.github
-.kiro
-.qoder 
-.vscode
 
 

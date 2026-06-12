@@ -1,5 +1,5 @@
 {
-  "mcpServers": {
+  "servers": {
     "code-review-graph": {
       "command": "C:\\Users\\Rushi\\anaconda3\\python.exe",
       "args": [
@@ -8,8 +8,7 @@
         "serve"
       ],
       "cwd": "C:\\Users\\Rushi\\Desktop\\Ludo_v2",
-      "type": "stdio",
-      "env": []
+      "type": "stdio"
     }
   }
 }
