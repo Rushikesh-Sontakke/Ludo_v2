@@ -98,10 +98,10 @@ export default class GameManager extends cc.Component {
         if (this._state !== TurnState.WaitingRoll) return;
         this._state = TurnState.Moving;
 
+        if (AudioManager.instance) AudioManager.instance.playSfx("dice");
         const value = await this.dice.roll();
         this._currentRoll = value;
         this.events.emit(GameEvent.DICE_ROLLED, value);
-        if (AudioManager.instance) AudioManager.instance.playSfx("dice");
 
         const legal = this.getLegalMoves(this.currentColor, value);
         if (legal.length === 0) {
@@ -130,6 +130,7 @@ export default class GameManager extends cc.Component {
         this._state = TurnState.Moving;
         this.rerollRequested = false;
 
+        if (AudioManager.instance) AudioManager.instance.playSfx("dice");
         const value = await this.dice.roll();
         this._currentRoll = value;
         this.events.emit(GameEvent.DICE_ROLLED, value);
@@ -159,7 +160,6 @@ export default class GameManager extends cc.Component {
 
         await piece.moveStepByStep(steps);
         this.events.emit(GameEvent.PIECE_MOVED, piece);
-        if (AudioManager.instance) AudioManager.instance.playSfx("move");
 
         // Reaching the final home cell?
         if (piece.progress >= HOME_PROGRESS) {

@@ -12,6 +12,7 @@
 
 import { PlayerColor, HOME_PROGRESS } from "./Types";
 import BoardManager from "./BoardManager";
+import AudioManager from "./AudioManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -173,6 +174,9 @@ export default class Piece extends cc.Component {
                 local.x += offset.x;
                 local.y += offset.y;
                 
+                // Pop sound on each tile hop!
+                if (AudioManager.instance) AudioManager.instance.playSfx("move");
+
                 // A little arc + scale bounce relative to the editor scale!
                 cc.tween(this.node)
                     .to(0.12, { position: local }, { easing: "sineOut" })

@@ -48,7 +48,6 @@ export default class UIManager extends cc.Component {
     }
     private _onDiceRolled(value: number) {
         if (this.diceLabel) this.diceLabel.string = `${value}`;
-        if (AudioManager.instance) AudioManager.instance.playSfx("dice");
     }
     private _onGameWon(color: PlayerColor) {
         if (AudioManager.instance) AudioManager.instance.playSfx("win");
@@ -75,8 +74,8 @@ export default class UIManager extends cc.Component {
         cc.director.resume();
     }
 
-    public onReturnHome() { this._transitionToScene("Main"); }
-    public onPlayAgain() { this._transitionToScene("Game"); } // replayable (rubric red note)
+    public onReturnHome() { this._transitionToScene("MainScene"); }
+    public onPlayAgain() { this._transitionToScene("game"); } // replayable (rubric red note)
 
     // ---- transitions ----
     private _playTransitionIn() {

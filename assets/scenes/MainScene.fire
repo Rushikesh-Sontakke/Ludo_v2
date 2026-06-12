@@ -1423,16 +1423,24 @@
       "__uuid__": "d2ca2026-635a-4ef7-a3a4-2c37ad11bc04"
     },
     "bgmGame": {
-      "__uuid__": "b5d379b7-c38a-4089-b4fd-d98b7d69c6de"
+      "__uuid__": "f74fe778-f8e9-482b-b5a5-e180c36eed6e"
     },
     "sfxDice": {
-      "__uuid__": "cd5cad62-7dcd-4a21-b361-cfaecf9ea2a6"
+      "__uuid__": "9573bcc8-6b47-49ff-9534-5c72695d1fa0"
     },
-    "sfxMove": null,
-    "sfxCapture": null,
-    "sfxAbility": null,
-    "sfxWin": null,
-    "bgmVolume": 0.6,
+    "sfxMove": {
+      "__uuid__": "eb391b3d-f3f5-42db-9fbe-2577d9c8c472"
+    },
+    "sfxCapture": {
+      "__uuid__": "ca72e950-c4c6-486e-960a-3a83f6078f5c"
+    },
+    "sfxAbility": {
+      "__uuid__": "cfcb5a1b-0e95-4906-a618-25888fb18f8f"
+    },
+    "sfxWin": {
+      "__uuid__": "3a7b2d9d-86f8-4628-bb45-6defd27d34b2"
+    },
+    "bgmVolume": 0.3,
     "sfxVolume": 1,
     "_id": "118ADLYmFGaL5xkk9mAQOX"
   },
