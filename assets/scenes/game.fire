@@ -635,8 +635,8 @@
     "faceSprite": {
       "__id__": 14
     },
-    "settleTime": 4,
-    "launchImpulse": 6,
+    "settleTime": 0.5,
+    "launchImpulse": 10,
     "_id": "9d28rkLIRD4ZMYT8x23bI1"
   },
   {

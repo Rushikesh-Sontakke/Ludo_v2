@@ -42,6 +42,7 @@ export default class GameManager extends cc.Component {
     private _turnIndex = 0;
     private _state = TurnState.WaitingRoll;
     private _currentRoll = 0;
+    private _capturedThisTurn = false;
 
     // Ability hooks (set by AbilitySystem before a move resolves).
     public pendingDoubleMove = false;
@@ -69,8 +70,23 @@ export default class GameManager extends cc.Component {
             if (!this._piecesByColor[p.color]) this._piecesByColor[p.color] = [];
             this._piecesByColor[p.color].push(p);
             p.onClicked = (piece) => this.onPieceClicked(piece);
-            p.snapToProgress();
         }
+
+        // SPEED-UP: Start each player's first piece on the entry tile
+        // so the game begins with action immediately!
+        for (const colorKey of Object.keys(this._piecesByColor)) {
+            const pieces = this._piecesByColor[Number(colorKey)];
+            if (pieces.length > 0) {
+                pieces[0].progress = 1; // on the entry tile
+            }
+        }
+
+        // Snap ALL pieces to their correct positions
+        for (const node of this.pieceNodes) {
+            const p = node.getComponent(Piece);
+            if (p) p.snapToProgress();
+        }
+
         this._beginTurn();
 
         // Switch to game BGM (AudioManager persists from the first scene)
@@ -158,6 +174,7 @@ export default class GameManager extends cc.Component {
             this.pendingDoubleMove = false;
         }
 
+        this._capturedThisTurn = false;
         await piece.moveStepByStep(steps);
         this.events.emit(GameEvent.PIECE_MOVED, piece);
 
@@ -178,8 +195,8 @@ export default class GameManager extends cc.Component {
             return;
         }
 
-        // Roll-again-on-6 rule.
-        this._endTurn(this._currentRoll === 6);
+        // Bonus turn on rolling a 6 OR capturing an enemy piece!
+        this._endTurn(this._currentRoll === 6 || this._capturedThisTurn);
     }
 
     private _endTurn(samePlayerAgain: boolean) {
@@ -223,6 +240,7 @@ export default class GameManager extends cc.Component {
                 const enemyCell = this.board.getRingCell(enemy.color, enemy.progress);
                 if (enemyCell === cell) {
                     enemy.sendHomeToBase();
+                    this._capturedThisTurn = true;
                     this.events.emit(GameEvent.PIECE_CAPTURED, enemy);
                     if (AudioManager.instance) AudioManager.instance.playSfx("capture");
                 }
